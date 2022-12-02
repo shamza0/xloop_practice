@@ -1,0 +1,8 @@
+touch dockerfile 
+
+nano dockerfile
+
+docker build -t xloopdocker .
+
+docker run -p 8889:8889 -e NOTEBOOK_ARGS=--port=8889 xloopdocker
+
